@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/BaoPham92/Resstaurant-Reviews/issues"
   },
-  "homepage": "https://github.com/BaoPham92/Resstaurant-Reviews#readme"
+  "homepage": "https://github.com/BaoPham92/Resstaurant-Reviews#readme",
+  "dependencies": {
+    "mapbox-gl": "^0.51.0"
+  }
 }
