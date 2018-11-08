@@ -1,0 +1,20 @@
+{
+  "name": "mws-restaurant-stage-1",
+  "version": "1.0.0",
+  "description": "Here will be a project pre-coded as a resstaurant reviewing application meant for mobile and desktop use.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaoPham92/Resstaurant-Reviews.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BaoPham92/Resstaurant-Reviews/issues"
+  },
+  "homepage": "https://github.com/BaoPham92/Resstaurant-Reviews#readme"
+}
