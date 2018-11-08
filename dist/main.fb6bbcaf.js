@@ -191,7 +191,7 @@ initMap = function initMap() {
     scrollWheelZoom: false
   });
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
-    mapboxToken: '<your MAPBOX API KEY HERE>',
+    mapboxToken: 'pk.eyJ1IjoiYmFvcGhhbTkyIiwiYSI6ImNqbzg2OXBoMTEzMTAzdnMxZ2hjMHFkeDEifQ.7Xw1-ENS3uwEHoecbGQc4A',
     maxZoom: 18,
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' + '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' + 'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     id: 'mapbox.streets'
@@ -348,7 +348,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55802" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57415" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
