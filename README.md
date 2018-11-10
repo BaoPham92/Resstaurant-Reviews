@@ -54,7 +54,7 @@ Things that needs to be done, or looked at. Self pending reminders for code you 
 <!-- Todos section -->
 <details>
 <summary><strong>Todos:</strong></summary>
-- Review the caching next as we seem to have the base app working to a functional standard. (Has some accessibility, responsive working, map api running as should.). Getting the base template fixed / built for the caching next then we can point out next improvements later for other areas.
+- (*) Review the caching next as we seem to have the base app working to a functional standard. (Has some accessibility, responsive working, map api running as should.). Getting the base template fixed / built for the caching next then we can point out next improvements later for other areas.
 
 </details>
 <!-- End of Todos section -->
