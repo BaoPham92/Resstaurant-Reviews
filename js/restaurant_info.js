@@ -83,7 +83,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   name.innerHTML = restaurant.name;
 
   const address = document.getElementById('restaurant-address');
-  address.innerHTML = restaurant.address;
+  address.innerHTML = 'Address: ' + restaurant.address;
 
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img'
@@ -110,6 +110,9 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
 
     const day = document.createElement('td');
     day.innerHTML = key;
+    row.setAttribute('aria-describedby', 'hours' + 1);
+    row.tabIndex = '4';
+    row.id = 'hours' + 1;
     row.appendChild(day);
 
     const time = document.createElement('td');
@@ -157,10 +160,14 @@ createReviewHTML = (review) => {
 
   const rating = document.createElement('p');
   rating.innerHTML = `Rating: ${review.rating}`;
+  rating.setAttribute(`aria-label`, `Review rating of ${review.rating}`)
   li.appendChild(rating);
 
   const comments = document.createElement('p');
   comments.innerHTML = review.comments;
+  comments.tabIndex = '5';
+  comments.id = `review` + 1;
+  comments.setAttribute('aria-describedby', 'review' + 1);
   li.appendChild(comments);
 
   return li;
