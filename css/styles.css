@@ -263,13 +263,12 @@ nav h1 a {
     /* leaflet's buttons are z-index: 1000 */
 }
 
-.inside #map-container {
+#map-container {
     background: blue none repeat scroll 0 0;
     height: 50vh;
     width: 100%;
 }
-
-.inside #map {
+#map {
     background-color: #ccc;
     height: 100%;
     width: 100%;
