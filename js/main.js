@@ -209,3 +209,13 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 } */
+
+// Start of cache content \\
+('serviceWorker' in navigator) ?
+  navigator.serviceWorker
+    .register('/sw.js')
+    .catch((err) => {
+      console.error(err);
+    })
+  : console.error(err);
+// End of Cache content \\
