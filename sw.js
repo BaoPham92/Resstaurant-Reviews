@@ -59,21 +59,3 @@ self.addEventListener('fetch', (event) => {
             })
     );
 });
-
-//  Upon activation event.
-self.addEventListener('activate', (event) => {
-
-    var cacheWhitelist = ['RRA-v1'];
-
-    event.waitUntil(
-        caches.keys().then((cacheNames) => {
-            return Promise.all(
-                cacheNames.map(function (cacheName) {
-                    if (cacheWhitelist.indexOf(cacheName) === -1) {
-                        return caches.delete(cacheName);
-                    }
-                })
-            );
-        })
-    );
-});
