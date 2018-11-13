@@ -7,8 +7,8 @@ I will be adjusting the code to achieve mobile responiveness, accessibilities an
 ## S1 - Legend / Markers
 
 - __(*) = In progress.__
-- __(S#) = "Section" indicator.__
 - __(**) = Finished.__
+- __(S#) = "Section" indicator.__
 - __(??) = Sideboard. (Things to will fiddle with, but not a priority. Given if this repo is for practices or not.)__
 - __(--) = Removed. (No longer a focus, or not needed.)__
 
@@ -29,23 +29,11 @@ Here will be my personal notes working on the project. Expect random banter. Hel
 
 - November 9th. I should have also prepared another section. Should be a todo part of the section. Honestly, I forgot to do that in the beginning, but as mentioned this is not entirely a official documentation as of yet. Official in my terms of spending enormous amount of time and detail picking apart the doc and labeling it official lol.
 
+- November 13th. So far the objective, was to was to turn this into a offline accessible content for the initial state. See more in the Todo section regarding the latest adjustments / commits. Also removed the Tools section as I doubt this will be a project that will need much in terms of any dependencies. This isn't a full scale project.
+
 </details>
 <!-- End of Notes section -->
 <br>
-
----
-
-### S3 - Tools:
-Descriptions / list of what I will be using during the project.
-<!-- Tools section -->
-<details>
-<summary><strong>Tools:</strong></summary>
-
-<h5>Module Bundler:</h5>
-- Parcel
-
-</details>
-<!-- End of Tools section -->
 
 --- 
 ### S4 - Todo:
@@ -54,7 +42,17 @@ Things that needs to be done, or looked at. Self pending reminders for code you 
 <!-- Todos section -->
 <details>
 <summary><strong>Todos:</strong></summary>
-- (*) Review the caching next as we seem to have the base app working to a functional standard. (Has some accessibility, responsive working, map api running as should.). Getting the base template fixed / built for the caching next then we can point out next improvements later for other areas.
+
+- (**) Review the caching next as we seem to have the base app working to a functional standard. (Has some accessibility, responsive working, map api running as should.). Getting the base template fixed / built for the caching next then we can point out next improvements later for other areas.
+
+- (**) Didn't update this for awhile between balancing some schedule occupations recently. However, the following below have been completed: 
+> 1. Created an offline solution for rendering previous installed cached assets upon the installation event trigger for the service workers.
+
+> 2. Adjusted semantics for accessibility usage by defining the elements accodingly.
+
+> 3. Made images accessible with alt attr.
+
+> 4. A couple of bugfixes regarding the fetch SW event before the solution for complete offline rendering of the app's usage.
 
 </details>
 <!-- End of Todos section -->
