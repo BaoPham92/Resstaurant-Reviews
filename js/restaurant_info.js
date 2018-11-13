@@ -81,6 +81,7 @@ fetchRestaurantFromURL = (callback) => {
 fillRestaurantHTML = (restaurant = self.restaurant) => {
   const name = document.getElementById('restaurant-name');
   name.innerHTML = restaurant.name;
+  name.setAttribute('role', 'heading')
 
   const address = document.getElementById('restaurant-address');
   address.innerHTML = 'Address: ' + restaurant.address;
@@ -88,6 +89,8 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img'
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.alt = `The restaurant of, ${restaurant.name}`;
+  image.setAttribute('role', 'img');
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
@@ -111,7 +114,7 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
     const day = document.createElement('td');
     day.innerHTML = key;
     row.setAttribute('aria-describedby', 'hours' + 1);
-    row.tabIndex = '4';
+    row.tabIndex = '5';
     row.id = 'hours' + 1;
     row.appendChild(day);
 
@@ -130,6 +133,8 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
   const title = document.createElement('h2');
   title.innerHTML = 'Reviews';
+  title.setAttribute('role', 'heading');
+  title.tabIndex = '5';
   container.appendChild(title);
 
   if (!reviews) {
@@ -165,10 +170,12 @@ createReviewHTML = (review) => {
 
   const comments = document.createElement('p');
   comments.innerHTML = review.comments;
-  comments.tabIndex = '5';
+  comments.tabIndex = '6';
   comments.id = `review` + 1;
   comments.setAttribute('aria-describedby', 'review' + 1);
   li.appendChild(comments);
+
+  li.setAttribute('role', 'listitem');
 
   return li;
 }
