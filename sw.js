@@ -45,8 +45,15 @@ self.addEventListener('fetch', (event) => {
                     return response;
                 } else {
                     return fetch(event.request)
+                        .then((response) => {
+                            const res = response.clone();
+                            caches.open('RRA-v1').then(cache => {
+                                cache.put(event.request, res);
+                            })
+                            return response;
+                        })
                         .catch((err) => {
-                            console.error(err);
+                            console.log(err);
                         })
                 }
             })
