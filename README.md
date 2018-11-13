@@ -45,7 +45,8 @@ Things that needs to be done, or looked at. Self pending reminders for code you 
 
 - (**) Review the caching next as we seem to have the base app working to a functional standard. (Has some accessibility, responsive working, map api running as should.). Getting the base template fixed / built for the caching next then we can point out next improvements later for other areas.
 
-- (**) Didn't update this for awhile between balancing some schedule occupations recently. However, the following below have been completed: 
+- (**) Didn't update this for awhile between balancing some schedule occupations recently. However, the following below have been completed:
+ 
 > 1. Created an offline solution for rendering previous installed cached assets upon the installation event trigger for the service workers.
 
 > 2. Adjusted semantics for accessibility usage by defining the elements accodingly.
@@ -56,3 +57,15 @@ Things that needs to be done, or looked at. Self pending reminders for code you 
 
 </details>
 <!-- End of Todos section -->
+
+## Credits | Sources
+
+I would like to give credit and thanks to the following resources.
+
+#### Communities:
+- [Udacity's](https://discussions.udacity.com/) active community and support.
+- [StackOverflow](https://stackoverflow.com/) and their community for the in depth library of answers and troubleshooting aid.
+
+#### Libraries:
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web) Great library for devevelopment resources.
+- [W3Schools](https://www.w3schools.com/default.asp) Additional to MDN, a great source for development resources.
