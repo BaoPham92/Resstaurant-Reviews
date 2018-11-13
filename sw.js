@@ -26,6 +26,7 @@ self.addEventListener('install', (event) => {
                 '/img/10.jpg',
                 '/img/favicon.png',
                 'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
+                'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js',
                 'https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css'
             ]);
         })
@@ -36,17 +37,19 @@ self.addEventListener('install', (event) => {
 
 self.addEventListener('fetch', (event) => {
 
+    const eventReq = event.request;
+
     event.respondWith(
-        caches.match(event.request)
+        caches.match(eventReq)
             .then((response) => {
                 if (response) {
-                    console.log(`${event.response} from fetching cache`);
+                    console.log(`${eventReq} from fetching cache`);
                     return response || fetch(event.request);
-                };
+                }
             })
             .catch((err) => {
                 console.error(err);
-                return response || fetch(event.request);
+                return response || fetch(eventReq);
             })
     );
 })
