@@ -37,19 +37,36 @@ self.addEventListener('install', (event) => {
 
 self.addEventListener('fetch', (event) => {
 
-    const eventReq = event.request;
-
     event.respondWith(
-        caches.match(eventReq)
+        caches.match(event.request)
             .then((response) => {
                 if (response) {
-                    console.log(`${eventReq} from fetching cache`);
-                    return response || fetch(event.request);
+                    console.log('Success, ', event.request, ' is returned from fetching cache');
+                    return response;
+                } else {
+                    return fetch(event.request)
+                        .catch((err) => {
+                            console.error(err);
+                        })
                 }
             })
-            .catch((err) => {
-                console.error(err);
-                return response || fetch(eventReq);
-            })
     );
-})
+});
+
+//  Upon activation event.
+self.addEventListener('activate', (event) => {
+
+    var cacheWhitelist = ['RRA-v1'];
+
+    event.waitUntil(
+        caches.keys().then((cacheNames) => {
+            return Promise.all(
+                cacheNames.map(function (cacheName) {
+                    if (cacheWhitelist.indexOf(cacheName) === -1) {
+                        return caches.delete(cacheName);
+                    }
+                })
+            );
+        })
+    );
+});
