@@ -31,3 +31,22 @@ self.addEventListener('install', (event) => {
         })
     );
 });
+
+// Upon fetch event.
+
+self.addEventListener('fetch', (event) => {
+
+    event.respondWith(
+        caches.match(event.request)
+            .then((response) => {
+                if (response) {
+                    console.log(`${event.response} from fetching cache`);
+                    return response || fetch(event.request);
+                };
+            })
+            .catch((err) => {
+                console.error(err);
+                return response || fetch(event.request);
+            })
+    );
+})
