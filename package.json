@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/BaoPham92/Resstaurant-Reviews#readme",
   "dependencies": {
-    "mapbox-gl": "^0.51.0"
+    "mapbox-gl": "^0.51.0",
+    "vanilla-lazyload": "^8.17.0"
   }
 }

@@ -1,3 +1,12 @@
+import LazyLoad from "vanilla-lazyload";
+
+// Lazyload images.
+(function lazyLoad(){
+  return new LazyLoad({
+    element_selector: "restaurant-img"
+  });
+}());
+
 let restaurant;
 var newMap;
 
@@ -88,7 +97,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
 
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img'
-  image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.setAttribute('data-src', DBHelper.imageUrlForRestaurant(restaurant));
   image.alt = `The restaurant of, ${restaurant.name}`;
   image.setAttribute('role', 'img');
 
