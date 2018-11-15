@@ -8,20 +8,6 @@ html {
     margin: 0;
 }
 
-/* ====================== Media Query: 1200w ====================== */
-
-@media screen and (min-width: 1200px) {
-    main,
-    header,
-    footer {
-        width: 1200px;
-        box-shadow: 0 1.2px 8px 0 black;
-        margin: auto;
-    }
-}
-
-/* ====================== Media Query: 1200w ====================== */
-
 body,
 td,
 th,
@@ -120,16 +106,6 @@ nav h1 a {
     letter-spacing: 10px;
     text-transform: uppercase;
 }
-
-/* ====================== Media Query: 768w ====================== */
-
-@media screen and (min-width: 768px) {
-    nav h1 a {
-        font-size: 2.2em;
-    }
-}
-
-/* ====================== Media Query: 768w ====================== */
 
 #breadcrumb {
     padding: 10px 40px 16px;
@@ -232,19 +208,8 @@ nav h1 a {
 }
 
 #restaurants-list figcaption {
-    display: inline-block;
+    margin: 15px;
 }
-
-/* ====================== Media Query: min-width 1200 ====================== */
-
-@media screen and (min-width: 1200px) {
-    #restaurants-list li {
-        width: 250px;
-        height: 400px;
-    }
-}
-
-/* ====================== Media Query: min-width 1200 ====================== */
 
 #restaurants-list .restaurant-img {
     background-color: #ccc;
@@ -255,7 +220,6 @@ nav h1 a {
 }
 
 #restaurants-list li h3 {
-    display: inline-block;
     color: #f18200;
     font-family: Arial, sans-serif;
     font-size: 14pt;
@@ -274,7 +238,6 @@ nav h1 a {
     background-color: orange;
     border-bottom: 3px solid #eee;
     color: #fff;
-    display: inline-block;
     font-size: 10pt;
     margin: 15px 0 0;
     padding: 8px 30px 10px;
@@ -390,3 +353,45 @@ nav h1 a {
 #restaurant-hours td {
     color: #666;
 }
+
+/* ====================== Media Query: 768w ====================== */
+
+@media screen and (min-width: 768px) {
+    nav h1 a {
+        font-size: 1.2em;
+    }
+    #restaurants-list {
+        font-size: 2.2em;
+    }
+
+    #restaurants-list li a {
+        font-size: 0.9em;
+    }
+
+    #restaurants-list li h3 {
+        font-size: 1.1em;
+    }
+    .filter-options h2 {
+        font-size: 1.6em;
+    }
+}
+
+/* ====================== Media Query: 768w ====================== */
+
+/* ====================== Media Query: min-width 1200 ====================== */
+
+@media screen and (min-width: 1200px) {
+    main,
+    header,
+    footer {
+        width: 1200px;
+        box-shadow: 0 1.2px 8px 0 black;
+        margin: auto;
+    }
+    #restaurants-list li {
+        width: 250px;
+        height: 400px;
+    }
+}
+
+/* ====================== Media Query: min-width 1200 ====================== */

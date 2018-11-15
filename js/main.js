@@ -161,6 +161,7 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.setAttribute('data-src', DBHelper.imageUrlForRestaurant(restaurant));
   image.alt = `The restaurant of, ${restaurant.name}`;
   li.append(image);
 
@@ -217,4 +218,10 @@ addMarkersToMap = (restaurants = self.restaurants) => {
       console.error(err);
     })
   : console.error(err);
-// End of Cache content \\
+
+// Lazyload images.
+(function lazyLoad() {
+  return new LazyLoad({
+    element_selector: "restaurant-img"
+  });
+}());

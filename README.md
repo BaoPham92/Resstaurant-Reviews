@@ -31,6 +31,8 @@ Here will be my personal notes working on the project. Expect random banter. Hel
 
 - November 13th. So far the objective, was to was to turn this into a offline accessible content for the initial state. See more in the Todo section regarding the latest adjustments / commits. Also removed the Tools section as I doubt this will be a project that will need much in terms of any dependencies. This isn't a full scale project.
 
+- November 14th. Minor updates today. Updated semantics with additional (aria-role, aria-label) attributes added. Attribute typos. A media query was added for min-vw: 1200 and changed content CSS slightly regarding flexbox usage. Added lazyloading for application performance when rendering to the client.
+
 </details>
 <!-- End of Notes section -->
 <br>

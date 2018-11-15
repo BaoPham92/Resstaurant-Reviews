@@ -1,12 +1,3 @@
-import LazyLoad from "vanilla-lazyload";
-
-// Lazyload images.
-(function lazyLoad(){
-  return new LazyLoad({
-    element_selector: "restaurant-img"
-  });
-}());
-
 let restaurant;
 var newMap;
 
@@ -214,3 +205,10 @@ getParameterByName = (name, url) => {
     return '';
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+
+// Lazyload images.
+(function lazyLoad() {
+  return new LazyLoad({
+    element_selector: "restaurant-img"
+  });
+}());

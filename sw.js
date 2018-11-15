@@ -27,6 +27,7 @@ self.addEventListener('install', (event) => {
                 '/img/favicon.png',
                 'https://unpkg.com/leaflet@1.3.1/dist/leaflet.css',
                 'https://unpkg.com/leaflet@1.3.1/dist/leaflet.js',
+                'https://cdn.jsdelivr.net/npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js',
                 'https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css'
             ]);
         })
