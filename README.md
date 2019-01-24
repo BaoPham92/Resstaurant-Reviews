@@ -12,6 +12,9 @@ I will be adjusting the code to achieve mobile responiveness, accessibilities an
 - __(??) = Sideboard. (Experimental)__
 - __(--) = Removed. (No longer needed)__
 
+#### Getting Started:
+- npm install in the directory
+- Run ```python -m SimpleHTTPServer 8080``` in your CLI to serve a working local production envrionment.
 --- 
 Currently the legend (all sections actually.) section is a experimental part of the readme documentation file for clarity, guidelines, and notes. Everything here is subject to change and does not resemble any form of a official "documentation-ready" to use.
 
@@ -31,7 +34,7 @@ Here will be my personal notes working on the project. Expect random banter. Hel
 
 - November 13th. So far the objective, was to was to turn this into a offline accessible content for the initial state. See more in the Todo section regarding the latest adjustments / commits. Also removed the Tools section as I doubt this will be a project that will need much in terms of any dependencies. This isn't a full scale project.
 
-- November 14th. Minor updates today. Updated semantics with additional (aria-role, aria-label) attributes added. Attribute typos. A media query was added for min-vw: 1200 and changed content CSS slightly regarding flexbox usage. Added lazyloading for application performance when rendering to the client.
+- November 14th. Minor updates today. Updated semantics with additional (aria-role, aria-label) attributes added. Attribute typos. A media query was added for min-vw: 1200 and 768. Changed content CSS slightly regarding flexbox usage. Added lazyloading for application performance when rendering to the client. Cached items now include the CDN as well. 
 
 </details>
 <!-- End of Notes section -->
