@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Here will be a project pre-coded as a resstaurant reviewing application meant for mobile and desktop use.",
   "main": "index.js",
+  "homepage": "https://baopham92.github.io//Resstaurant-Reviews/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm start"
   },
   "repository": {
     "type": "git",
@@ -16,8 +20,9 @@
   "bugs": {
     "url": "https://github.com/BaoPham92/Resstaurant-Reviews/issues"
   },
-  "homepage": "https://github.com/BaoPham92/Resstaurant-Reviews#readme",
   "dependencies": {
+    "gh-pages": "^2.0.1",
+    "http-server": "^0.11.1",
     "mapbox-gl": "^0.51.0",
     "vanilla-lazyload": "^8.17.0"
   }

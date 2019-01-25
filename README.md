@@ -14,7 +14,7 @@ I will be adjusting the code to achieve mobile responiveness, accessibilities an
 
 #### Getting Started:
 - npm install in the directory
-- Run ```python -m SimpleHTTPServer 8080``` in your CLI to serve a working local production envrionment.
+- Run ```npm start``` in your CLI to serve a working local production envrionment.
 --- 
 Currently the legend (all sections actually.) section is a experimental part of the readme documentation file for clarity, guidelines, and notes. Everything here is subject to change and does not resemble any form of a official "documentation-ready" to use.
 
