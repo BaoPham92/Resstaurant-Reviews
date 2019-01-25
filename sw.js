@@ -42,7 +42,7 @@ self.addEventListener('fetch', (event) => {
         caches.match(event.request)
             .then((response) => {
                 if (response) {
-                    console.log('Success, ', event.request, ' is returned from fetching cache');
+                    // console.log('Success, ', event.request, ' is returned from fetching cache');
                     return response;
                 } else {
                     return fetch(event.request)
