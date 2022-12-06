@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "gh-pages": "^2.0.1",
-    "http-server": "^0.11.1",
+    "http-server": "^0.11.2",
     "mapbox-gl": "^0.51.0",
     "vanilla-lazyload": "^8.17.0"
   }
